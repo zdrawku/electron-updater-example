@@ -5,6 +5,7 @@
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
+    "start": "electron .",
     "publish": "electron-builder -p always"
   },
   "devDependencies": {
@@ -31,6 +32,13 @@
     "linux": {
       "category": "your.app.category.type",
       "target": "AppImage"
+    },
+    "build": {
+      "publish": [{
+          "provider": "github",
+          "owner": "zdravko",
+          "repo": "electron-updater-example"
+      }]
     }
   }
 }
