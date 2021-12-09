@@ -33,12 +33,10 @@
       "category": "your.app.category.type",
       "target": "AppImage"
     },
-    "build": {
-      "publish": [{
-          "provider": "github",
-          "owner": "zdravko",
-          "repo": "electron-updater-example"
-      }]
+    "publish": {
+        "provider": "github",
+        "owner": "zdravko",
+        "repo": "electron-updater-example"
     }
   }
 }
